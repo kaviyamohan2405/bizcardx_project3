@@ -1,35 +1,26 @@
-# BizCardX - Extracting Business Card Data with OCR
+**BizCardX: Extracting Business Card Data with OCR**
 
-BizCardX is a user-friendly tool for extracting information from business cards using Optical Character Recognition (OCR) technology. This project leverages the EasyOCR library to recognize text on business cards and extracts the data into a SQL database after classification using regular expressions. The extracted information is then accessible through a GUI built using Streamlit. The BizCardX application provides an intuitive interface for users to upload business card images, extract information, and manage the data within a database.
+The project would require skills in image processing, OCR, GUI development, and database management. It would also require careful design and planning of the application architecture to ensure that it is scalable, maintainable, and extensible. Good documentation and code organization would also be important for the project. Overall, the result of the project would be a useful tool for businesses and individuals who need to manage business card information efficiently.
 
-# Project Overview
-## BizCardX aims to simplify the process of extracting and managing information from business cards. The tool offers the following features:
+NAME : KAVIYA M
 
-Extraction of key information from business cards: company name, cardholder name, designation, contact details, etc.
-Storage of extracted data in a MySQL database for easy access and retrieval.
-GUI built with Streamlit for a user-friendly interface.
-User options to upload, extract, and modify business card data.
-Libraries/Modules Used
-**pandas:** Used to create DataFrames for data manipulation and storage.
-**mysql.connector:** Used to store and retrieve data from a MySQL database.
-**streamlit:** Used to create a graphical user interface for users.
-easyocr: Used for text extraction from business card images.
+BATCH : DW73DW74
 
+DOMAIN : DATA SCIENCE
 
-# Workflow
-Install the required libraries using the command pip install [Name of the library]. Install streamlit, mysql.connector, pandas, and easyocr.
-Execute the BizCardX_main.py script using the command streamlit run BizCardX_main.py.
-The web application opens in a browser, presenting the user with three menu options: HOME, UPLOAD & EXTRACT, MODIFY.
-Users can upload a business card image in the UPLOAD & EXTRACT menu.
-The EasyOCR library extracts text from the uploaded image.
-Extracted text is classified using regular expressions to identify key information such as company name, cardholder name, etc.
-The classified data is displayed on the screen and can be edited by the user if needed.
-Clicking the "Upload to Database" button stores the data in a MySQL database.
-The MODIFY menu allows users to read, update, and delete data in the MySQL database.
+**Technologies Used In This Project**
 
-# How to Use
-Clone this repository.
-Install the required libraries using the pip install command.
-Set up your MySQL database credentials in the appropriate places in your script.
-Run the script BizCardX_main.py using the streamlit run command.
-Use the web interface to upload business card images, extract information, and manage the data.
+-> OCR -> Data Extraction -> SQL -> Streamlit
+
+**Approach**
+
+1. Install the required packages: You will need to install Python, Streamlit, easyOCR, and a database management system like SQLite or MySQL.
+2. Design the user interface: Create a simple and intuitive user interface using Streamlit that guides users through the process of uploading the business card image and extracting its information. You can use widgets like file uploader, buttons, and text boxes to make the interface more interactive.
+3. Implement the image processing and OCR: Use easyOCR to extract the relevant information from the uploaded business card image. You can use image processing techniques like resizing, cropping, and thresholding to enhance the image quality before passing it to the OCR engine.
+4. Display the extracted information: Once the information has been extracted, display it in a clean and organized manner in the Streamlit GUI. You can use widgets like tables, text boxes, and labels to present the information.
+5. Implement database integration: Use a database management system like SQLite or MySQL to store the extracted information along with the uploaded business card image. You can use SQL queries to create tables, insert data, and retrieve data from the database, Update the data and Allow the user to delete the data through the streamlit UI
+6. Test the application: Test the application thoroughly to ensure that it works as expected. You can run the application on your local machine by running the command streamlit run app.py in the terminal, where app.py is the name of your Streamlit application file.
+7. Improve the application: Continuously improve the application by adding new features, optimizing the code, and fixing bugs. You can also add user authentication and authorization to make the application more secure.
+
+**Result**
+The final application would have a simple and intuitive user interface that guides users through the process of uploading the business card image and extracting its information. The extracted information would be displayed in a clean and organized manner, and users would be able to easily add it to the database with the click of a button.
